@@ -1,5 +1,5 @@
 class Shop < ActiveRecord::Base
-  has_many :product
+  has_many :products
 
   validates_presence_of :phone
 

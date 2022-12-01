@@ -14,6 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_01_145546) do
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.integer "shop_id"
+    t.string "industry"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["shop_id"], name: "index_products_on_shop_id"
