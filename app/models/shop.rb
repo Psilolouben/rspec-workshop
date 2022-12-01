@@ -1,4 +1,6 @@
 class Shop < ActiveRecord::Base
+  has_many :product
+
   validates_presence_of :phone
 
   def shop_name_printer
