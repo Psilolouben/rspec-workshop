@@ -6,7 +6,9 @@ RSpec.describe Shop, :type => :model do
   end
 
   describe '#shop_name_printer' do
-    let!(:shop) { FactoryBot.create(:shop, :mstarting) }
+    let(:shop) { FactoryBot.create(:shop, :mstarting) }
+    let(:shop2) { FactoryBot.create(:shop, :mstarting) }
+
     subject { shop.shop_name_printer }
     
     context 'when the shop starts with M' do
